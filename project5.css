@@ -1,373 +1,147 @@
-*{
+/* Universal reset */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    font-family:Verdana, Geneva, Tahoma, sans-serif ;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
 
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.header{
+
+/* Header */
+.header {
     display: flex;
-    padding-left: 20px;
-    padding-top: 10px;
+    align-items: center;
+    padding: 10px 20px;
 }
-.header1{
-    display: flex;
-}
-.header h3{
+
+.header h3 {
     margin-right: 15px;
-    padding-top: 2px;
-    padding-bottom: 10PX;
+    padding: 2px 0 10px;
 }
-.header p{
+
+.header p {
     padding-top: 5px;
 }
-.word-project{
-    display: none;
-}
-.links{
-    display: none;
-    margin-left: 200px;
-}
-.container{
+
+/* Containers */
+.container {
     width: 100%;
-    padding-left: 25px;
-}
-.div-image-a {
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 400px;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .text-overlay {
-    position: absolute;
-    width: 70px;
-    height: 30px;
-    text-align: center;
-    color: #fff;
-  }
-  
-   .text-overlay h3 {
-    font-size: 20px; 
-    font-weight: bold;
-    margin: 0;
-    padding: 5px;
-    background-color: black;
-  }
-#image-a{
-    width: 100%;
-    height: 100%;
-}
-.div-image-b {
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 300px;
+    padding: 0 25px;
     margin-top: 20px;
-  }
-  
-  .div-image-b .text-overlay {
-    position: absolute;
-    width: 150px;
-    height: 30px;
-    background-color: #fff;
-    text-align: center;
-    color: #fff;
-  }
-  
-  .div-image-b .text-overlay p {
-    margin-bottom: 20px;
-    padding: 5px;
-    background-color: black;
-  }
-#image-b{
-    width: 96%;
-    height: auto;
 }
-.div-image-c {
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 300px;
-    margin-top: 20px;
-  }
-  
-  .div-image-c .text-overlay {
-    position: absolute;
-    width: 150px;
-    height: 30px;
-    background-color: #fff;
-    text-align: center;
-    color: #fff;
-  }
-  
-  .div-image-c .text-overlay p {
-    margin-bottom: 20px;
-    padding: 5px;
-    background-color: black;
-  }
-#image-c{
-    width: 96%;
-    height: auto;
+
+.container h2 {
+    margin-bottom: 30px;
 }
-.div-image-d {
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 300px;
-    margin-top: 20px;
-  }
-  .div-image-d .text-overlay {
-    position: absolute;
-    width: 150px;
-    height: 30px;
-    background-color: #fff;
-    text-align: center;
-    color: #fff;
-  }
-  
-  .div-image-d .text-overlay p {
-    margin-bottom: 20px;
-    padding: 5px;
-    background-color: black;
-  }
-#image-d{
-    width: 96%;
-    height: auto;
+
+.container p {
+    line-height: 1.6;
+    margin-bottom: 35px;
 }
-.div-image-e {
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: 300px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .div-image-e .text-overlay {
-    position: absolute;
-    width: 150px;
-    height: 30px;
-    background-color: #fff;
-    text-align: center;
-    color: #fff;
-  }
-  
-  .div-image-e .text-overlay p {
-    margin-bottom: 20px;
-    padding: 5px;
-    background-color: black;
-  }
-#image-e{
-    width: 96%;
-    height: auto;
-    width: 96%;
-}
+
+/* Image Sections */
+.div-image-a,
+.div-image-b,
+.div-image-c,
+.div-image-d,
+.div-image-e,
 .div-image-f {
     position: relative;
     display: flex;
     width: 100%;
     height: 300px;
     margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .div-image-f .text-overlay {
+    justify-content: center;
+    align-items: center;
+}
+
+.div-image-a {
+    height: 400px;
+}
+
+.div-image-b, .div-image-c, .div-image-d, .div-image-e, .div-image-f {
+    height: 300px;
+}
+
+.text-overlay {
     position: absolute;
-    width: 150px;
-    height: 30px;
-    background-color: #fff;
     text-align: center;
     color: #fff;
-  }
-  
-  .div-image-f .text-overlay p {
-    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 5px;
-    background-color: black;
-  }
-  .image-f{
-    width: 96%;
-    height: auto;
-  }
-.container h2{
-    margin-bottom: 30px;
+    font-weight: bold;
 }
-.container p{
-    line-height: 25px;
-    margin-bottom: 35px;
-}
-.person1{
-    width: 96%;
-}
-.girl-1-container{
-    width: 100%;
-    height: 340px;
-    margin-bottom: 15px;
-}
-.person1 #girl-1{
-    width: 96%;
-    filter: grayscale(80%);
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-.person1 h3{
-    font-weight: 400;
-    margin-bottom: 15px;
-}
-.person1 h4{
-    font-weight: 200;
-    margin-bottom: 15px;
-}
-.person1 p{
-    font-weight: 600;
-    font-size: 15px;
-    margin-bottom: 15px;
-}
-.person1 .link{
-    width: 100%;
-    background-color:aliceblue;
+
+.div-image-b .text-overlay, 
+.div-image-c .text-overlay,
+.div-image-d .text-overlay,
+.div-image-e .text-overlay,
+.div-image-f .text-overlay {
+    width: 150px;
     height: 30px;
-    margin-bottom: 15px;
-    text-align: center;
-    padding-top: 5px;
-    border-radius: 5px;
 }
-.person1 a{
-    text-decoration: none;
-    color: black;
-}
-.person2{
+
+#image-a,
+#image-b,
+#image-c,
+#image-d,
+#image-e,
+.image-f {
     width: 96%;
-}
-.man-1-container{
-    width: 100%;
-    height: 340px;
-    margin-bottom: 15px;
-}
-.person2 #man-1{
-    width: 96%;
-    filter: grayscale(80%);
-    object-fit: cover;
-    width: 100%;
     height: 100%;
-}
-.person2 h3{
-    font-weight: 400;
-    margin-bottom: 15px;
-}
-.person2 h4{
-    font-weight: 200;
-    margin-bottom: 15px;
-}
-.person2 p{
-    font-weight: 600;
-    font-size: 15px;
-    margin-bottom: 15px;
-}
-.person2 .link{
-    width: 100%;
-    background-color:aliceblue;
-    height: 30px;
-    margin-bottom: 15px;
-    text-align: center;
-    padding-top: 5px;
-    border-radius: 5px;
-}
-.person2 a{
-    text-decoration: none;
-    color: black;
-}
-.person3{
-    width: 96%;
-}
-.girl-3-container{
-    width: 100%;
-    height: 340px;
-    margin-bottom: 15px;
-}
-.person3 #girl-3{
-    width: 96%;
-    filter: grayscale(80%);
     object-fit: cover;
-    width: 100%;
-    height: 100%;
 }
-.person3 h3{
-    font-weight: 400;
-    margin-bottom: 15px;
-}
-.person3 h4{
-    font-weight: 200;
-    margin-bottom: 15px;
-}
-.person3 p{
-    font-weight: 600;
-    font-size: 15px;
-    margin-bottom: 15px;
-}
-.person3 .link{
-    width: 100%;
-    background-color:aliceblue;
-    height: 30px;
-    margin-bottom: 15px;
-    text-align: center;
-    padding-top: 5px;
-    border-radius: 5px;
-}
-.person3 a{
-    text-decoration: none;
-    color: black;
-}
-.person4{
+
+/* Profile Sections */
+.person1, .person2, .person3, .person4 {
     width: 96%;
     margin-bottom: 20px;
 }
-.man-2-container{
-    width: 100%;
-    height: 340px;
-    margin-bottom: 15px;
-}
-.person4 #man-2{
-    width: 96%;
-    filter: grayscale(80%);
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-.person4 h3{
+
+.person1 h3, 
+.person2 h3, 
+.person3 h3, 
+.person4 h3 {
     font-weight: 400;
     margin-bottom: 15px;
 }
-.person4 h4{
+
+.person1 h4, 
+.person2 h4, 
+.person3 h4, 
+.person4 h4 {
     font-weight: 200;
     margin-bottom: 15px;
 }
-.person4 p{
+
+.person1 p, 
+.person2 p, 
+.person3 p, 
+.person4 p {
     font-weight: 600;
     font-size: 15px;
     margin-bottom: 15px;
 }
-.person4 .link{
+
+.link {
     width: 100%;
-    background-color:aliceblue;
+    background-color: aliceblue;
     height: 30px;
     margin-bottom: 15px;
     text-align: center;
     padding-top: 5px;
     border-radius: 5px;
 }
-.person4 a{
+
+.link a {
     text-decoration: none;
     color: black;
 }
-.powered-by-webies{
+
+/* Footer */
+.powered-by-webies {
     width: 100%;
     height: 70px;
     border: 1px solid black;
@@ -377,6 +151,23 @@ body{
     color: white;
 }
 
-.powered-by-webies p a{
+.powered-by-webies p a {
     color: white;
-} 
+    text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container, .link, .text-overlay {
+        width: 100%;
+    }
+
+    #image-a, #image-b, #image-c, #image-d, #image-e, .image-f {
+        width: 100%;
+    }
+}
